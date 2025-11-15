@@ -10,7 +10,7 @@ namespace FactoryDemo
             // Create a transport factory
             TransportCreator factoryHost = new WaterwayTransportCreator("Cargo Ship");
 
-            // Use the factory's create method to create a delivery mode
+            // Use the factory's create method to create a delivery mode (strategy object)
             IDelivery delivery = factoryHost.CreateDeliveryMode();
 
             // Use the delivery mode
